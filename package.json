@@ -1,0 +1,19 @@
+{
+  "name": "my-website",
+  "version": "1.0.0",
+  "description": "my portfolio",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/N00040418/Portfolio.git"
+  },
+  "author": "Jonathan Schratter",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/N00040418/Portfolio/issues"
+  },
+  "homepage": "https://github.com/N00040418/Portfolio#readme"
+}
