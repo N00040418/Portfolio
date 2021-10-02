@@ -1,12 +1,130 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jonathan Schratter's Portfolio</title>
+  <link href="/css/fontawesome.min.css" rel="stylesheet">
+  <link href="/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Roboto+Slab:wght@400;700&family=Allura&display=swap" rel="stylesheet">
+  <link href="/css/style.css" rel="stylesheet">
 </head>
 <body>
-    Hello world
+    <header id="home">
+        <div class="logo">
+            <h1>Jonathan Schratter</h1>
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
+                <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Introduction -->
+    <section class="intro">
+        <h1 class="section__title section__title--intro">
+            Hi, I am <strong>Jonathan Schratter</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">Mathematics Major</p>
+        <img src="/img/porg.jpg" alt="a picture of Jonathan Schratter smiling" class="intro__img">
+    </section>
+
+    <!-- My Services -->
+    <section class="my-services" id="services">
+        <h1 class="section__title section__title--services">What I do</h1>
+        <div class="services">
+            <div class="service">
+                <h3>Service 1</h3>
+                <p>What i am doing in this service is...</p>
+            </div>
+            <div class="service">
+                <h3>Service 2</h3>
+                <p>What i am doing in this service is...</p>
+            </div>
+            <div class="service">
+                <h3>Service 3</h3>
+                <p>What i am doing in this service is...</p>
+            </div>
+        </div>
+
+        <a href="#work" class="btn">My Work</a>
+    </section>
+
+    <!-- About Me -->
+    <section class="about-me" id="about">
+        <h1 class="section__title section__title--about">Who I am</h1>
+        <p class="section__subtitle section__subtitle--about">Based out of Miami Florida</p>
+
+        <div class="about-me__body">
+            <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem IpsumLorem Ipsum Lorem IpsumLorem Ipsum Lorem IpsumLorem Ipsum Lorem IpsumLorem Ipsum Lorem IpsumLorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsum</p>
+            <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem IpsumLorem Ipsum Lorem IpsumLorem Ipsum Lorem IpsumLorem Ipsum Lorem IpsumLorem Ipsum Lorem IpsumLorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsum</p>
+        </div>
+
+        <img src="/img/selfie.jpg" alt="a picture of Jonathan Schratter on a computer" class="about-me__img">
+    </section>
+
+    <!-- My Work -->
+    <section class="my-work" id="work">
+        <h1 class="section__title section__title--work">Who I am</h1>
+        <p class="section__subtitle section__subtitle--work">Selection of my range of studies</p>
+
+        <div class="portfolio">
+            <a href="portfolio" class="portfolio__item">
+                <img src="/img/cabin.png" alt="" class="portfolio__img">
+            </a>
+            <a href="portfolio" class="portfolio__item">
+                <img src="/img/cake.png" alt="" class="portfolio__img">
+            </a>
+            <a href="portfolio" class="portfolio__item">
+                <img src="/img/circus.png" alt="" class="portfolio__img">
+            </a>
+            <a href="portfolio" class="portfolio__item">
+                <img src="/img/game.png" alt="" class="portfolio__img">
+            </a>
+            
+        </div>
+
+        <img src="/img/about-us.png" alt="a picture of Jonathan Schratter on a computer">
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <a href="mailto:jschr002@fiu.edu" class="footer__link">jschr002@fiu.edu</a>
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a href="https://github.com/N00040418" class="social-list__link">
+                    <i class="fab fa-github-square"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a href="https://www.linkedin.com/in/jonathan-schratter-061060209/" class="social-list__link">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a href="https://fiu.joinhandshake.com/users/27773836" class="social-list__link">
+                    <i class="fas fa-handshake"></i>
+                </a>
+            </li>
+        </ul>
+        <section class="footer-2">
+            <span>Jonathan Schratter</span>
+            <img src="/img/FIU.png" alt="" class="footer-2__img">
+            <p>College of Arts, Sciences & Education</p>
+            <p>Department of Mathematics and Statistics</p>
+            <p>Last Updated October 2, 2021</p>
+        </section>
+        <p><i class="fas fa-copyright"></i>Florida International University. All Rights Reserved.</p>
+    </footer>
+
+
+    <script src="/js/index.js"></script>
 </body>
 </html>
