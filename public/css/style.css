@@ -439,3 +439,17 @@ header {
   background: var(--clr-light);
   opacity: 0.55;
 }
+
+.in-text__link {
+  text-decoration: none;
+  color: var(--clr-accent);
+  transition: font-size 200ms ease-in-out;
+  cursor: pointer;
+}
+.in-text__link:hover {
+  color: inherit;
+  font-size: 2rem;
+  text-shadow: 2px 2px var(--clr-accent);
+}
+
+

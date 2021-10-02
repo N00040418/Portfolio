@@ -20,3 +20,9 @@ app.listen(port, () => {
 });
 
 module.exports = app;
+
+/*
+gcloud app deploy -v myVersion
+gcloud app versions list
+gcloud app versions delete --service=myVersion
+*/
