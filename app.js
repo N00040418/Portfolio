@@ -4,6 +4,7 @@ const app = express();
 const router = require('./routes/router');
 const port = process.env.PORT;
 
+app.locals.timeline = require('./timeline.json');
 app.use(express.json());
 app.use(express.static('public'));
 app.use('/css', express.static(__dirname + 'public/css'));
