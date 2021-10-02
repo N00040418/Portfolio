@@ -24,5 +24,5 @@ module.exports = app;
 /*
 gcloud app deploy -v myVersion
 gcloud app versions list
-gcloud app versions delete --service=myVersion
+gcloud app versions delete --service=default myVersion
 */
