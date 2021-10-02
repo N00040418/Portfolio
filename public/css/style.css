@@ -51,6 +51,9 @@ img {
   display: block;
   max-width: 100%;
 }
+.color {
+  color: var(--clr-accent);
+}
 
 :focus {
   outline: 3px solid var(--clr-accent);
