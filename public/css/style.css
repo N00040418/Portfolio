@@ -659,10 +659,10 @@ header {
     height: 94%;
   }
   .slide__title {
-    font-size: .75rem;
+    font-size: 1.5rem;
   }
   .slide__text {
-    font-size: .5rem;
+    font-size: .75rem;
   }
   .carousel{
     height: 45em;
