@@ -144,6 +144,13 @@ header {
   text-shadow: .025em .025em 0 var(--clr-accent),
               .05em .05em 0 var(--clr-light),
               .1em .1em 0 var(--clr-dark);
+            }
+.logo a {
+  text-decoration: none;
+  color: var(--clr-dark);
+}
+.logo a:hover {
+  color: var(--clr-accent);
 }
 .nav {
   position: fixed;
@@ -360,10 +367,17 @@ header {
 .portfolio__item {
   background: var(--clr-accent);
   overflow: hidden;
+  position: relative;
+  margin: 1em;
+  border: 7px solid var(--clr-accent);
+  border-radius: 11%;
+  
 }
 .portfolio__img {
   transition: transform 750ms cubic-bezier(.5,0,.5,1),
   opacity 250ms linear;
+  height: 100%;
+  object-fit: fill;
 }
 .portfolio__item:focus{
   position: relative;
@@ -372,7 +386,10 @@ header {
 .portfolio__img:hover, .portfolio__item:focus .portfolio__img {
   transform: scale(1.2);
   opacity: .75;
+
 }
+
+
 
 /* Footer */
 .footer {
@@ -533,6 +550,7 @@ header {
   background: var(--clr-dark);
   text-align: center;
   padding: 0;
+  position: relative;
 }
 .section__title--timeline {
   color: var(--clr-light);
@@ -541,13 +559,11 @@ header {
 .carousel{
   color: white;
   position: relative;
-  height: 600px;
+  height: 50em;
   width: 80%;
   margin: 0 auto;
 }
 .carousel__track-container {
-  background: lightgreen;
-  opacity: .5;
   height: 91%;
   position: relative;
   overflow: hidden;
@@ -611,6 +627,23 @@ header {
   color: var(--clr-dark);
 }
 .is-hidden {display: none;}
+
+.slide {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.slide__img {
+  height: 200px;
+  align-self: center;
+}
+.slide__title {
+  font-family: var(--ff-title);
+  font-size: var(--fs-h2);
+}
+.slide__text {
+  font-size: var(--fs-body);
+}
 @media (max-width: 900px) {
   .carousel__nav {
     display: flex;
@@ -624,5 +657,14 @@ header {
   .carousel__track-container {
 
     height: 94%;
+  }
+  .slide__title {
+    font-size: .75rem;
+  }
+  .slide__text {
+    font-size: .5rem;
+  }
+  .carousel{
+    height: 45em;
   }
 }

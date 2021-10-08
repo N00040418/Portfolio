@@ -9,13 +9,13 @@ const dotsNav = document.querySelector('.carousel__nav');
 const dots = Array.from(dotsNav.children);
 
 const slideWidth = slides[0].getBoundingClientRect().width;
-slides.forEach(setSlidePosition);
 ////////////////////////////////////////////////////////////////////////////////////
 // FUNCTIONS
 ////////////////////////////////////////////////////////////////////////////////////
 const setSlidePosition = (slide, index) => {
     slide.style.left = slideWidth * index + 'px';
 }
+slides.forEach(setSlidePosition);
 const moveToSlide = (track, currentSlide, targetSlide) => {
     track.style.transform = 'translateX(-' + targetSlide.style.left + ')';
     currentSlide.classList.remove('current-slide');
