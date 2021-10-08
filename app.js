@@ -12,6 +12,9 @@ app.use('/img', express.static(__dirname + 'public/img'));
 app.use('/js', express.static(__dirname + 'public/js'));
 app.use('/misc', express.static(__dirname + 'public/misc'));
 app.use('', router);
+app.use(function(req, res, next) {
+    res.status(404).render('404');
+});
 
 app.set("view engine", "ejs");
 

@@ -1,0 +1,83 @@
+<%- include('partials/header') %>
+
+    <!-- Introduction -->
+    <section class="intro">
+        <h1 class="section__title section__title--intro">
+            The<strong>Sound Of Music</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">not the movie...</p>
+        <img src="/img/porg.jpg" alt="a picture of Jonathan Schratter smiling" class="intro__img">
+    </section>
+
+
+        <!-- music -->
+    <section class="my-music">
+        <h1 class="section__title section__title--music">What is music?</h1>
+        <p class="section__subtitle section__subtitle--music">From the interpretations of a Mathematics Major.</p>
+        <h3 class="abstract">
+            <strong>ABSTRACT: </strong> Music being the quintessential show and tell of humanity historically from being the "art of the Muses"<a href="#mousike" class="citation">\(^{[1]}\) </a> to providing insight on audible vibrations with interference and wavicles for quantum mechanics<a href="#wavicle" class="citation">\(^{[2]}\) </a>. In this document, there will a mathematical approach in identifying noncacophonous blends of tones.
+        </h3>
+
+        <p>Music itself follows a set of rules to help oversee the incorporation of varying tone harmonics via defining specific sound waves played at particular orders and times. An example of this is shown below being Mozart's rendition of Jane Taylor's <em>"Twinkle Twinkle Little Star"</em>. For the sake of simplicity, this document will focus on defining sound waves via mathematics and physics versus the exploration of musicology. </p>
+
+        <div class="music-box">
+            <img src="/img/ttls.png" alt="image of twinkle twinkle little star">
+            <div>
+                <audio controls>
+                    <source src="ttls.ogg" type="audio/ogg">
+                    <source src="ttls.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+
+        <p>Sound waves being waves in general can be uniquely described via sinusoidals by having a frequency \(f= {1 \over T}\) where \(T\) is the time till one completed oscillation. Frequency is measured in units of Hertz(Hz) and can also be defined as \(f = {v \over \lambda}\) where \(v\) is the velocity of the wave and \(\lambda\) is the length. One popular application of using frequency is to define the sound wave as \(A\sin(\omega t)\) where \(A\) is pressure which can be measured in decibels (db), omega \(\omega=2\pi f\)\([{rad\over sec}]\) is the angular frequency and \(t\) is time\([s]\).
+            An example of varying sine waves and their sounds can be explored below.</p>
+          
+            <div id="music-container">
+                <div class="music-controls">
+                    <button id="btn">Play</button>
+                    <p id="demo">ss</p>
+                    <input type="range" min="100" max="500" id="myRange" step=".1">
+                    <p id="vol">ss</p>
+                    <input type="range" min="0" max="100" id="volume" step="1" value="25">
+                </div>
+                <div class="plot">
+                    <canvas id="oscilloscope"></canvas>
+                </div>
+            </div>
+
+
+        
+        <p>The human ear can percieve on average 20 Hz to 20 kHz</p>
+        <p>Audible notes from any frequency therfore.,.,.</p>
+        <p>When the music follows this pattern there is a harmonious blend opposed to cacophonous sounds.</p>
+
+
+        
+    </section>
+
+
+
+    <!-- music APA7 -->
+    <section class="bibliography">
+        <h1 class="section__title section__title--bibliography">Bibliography</h1>
+      <ol>
+         <li id="mousike">
+            <p>Wikimedia Foundation. (2021, October 4). <cite>Music</cite>. Wikipedia. Retrieved October 4, 2021, from <a href="https://en.wikipedia.org/wiki/Music" target="_blank" rel="noopener noreferrer">https://en.wikipedia.org/wiki/Music</a>.</p>
+         </li>
+         <li id="wavicle">
+            <p>Gantsevich, S. V., &amp; Gurevich, V. L. (2019). <cite>Physics of interference of quantum particles.</cite> Physics of the Solid State, 61(11), 2104–2109. <a href="https://doi.org/10.1134/s1063783419110155" target="_blank" rel="noopener noreferrer">https://doi.org/10.1134/s1063783419110155</a> </p>
+         </li>
+      </ol>
+    </section>
+
+<script src="/js/music.js"></script>
+
+
+
+
+
+
+
+    <%- include('partials/footer') %>

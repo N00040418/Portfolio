@@ -24,7 +24,7 @@
     "nineteen97": "1987",
     "nineteen98": "1987",
     "nineteen99": "1987",
-    "2000": {
+    "t2000": {
         "title": "Start of High School",
         "subtitle": "If you dont play music where you at?",
         "message": [
@@ -37,11 +37,11 @@
             "https://miro.medium.com/max/1400/1*mk1-6aYaf_Bes1E3Imhc0A.jpeg"
         ]
     },
-    "2001": "1987",
-    "2002": "1987",
-    "2003": "1987",
-    "2004": "1987",
-    "2005": {
+    "t2001": "1987",
+    "t2002": "1987",
+    "t2003": "1987",
+    "t2004": "1987",
+    "t2005": {
         "title": "High School is Over",
         "subtitle": "Time to venture to the real world",
         "message": [
@@ -54,10 +54,10 @@
             "https://miro.medium.com/max/1400/1*mk1-6aYaf_Bes1E3Imhc0A.jpeg"
         ]
     },
-    "2006": "1987",
-    "2007": "1987",
-    "2008": "1987",
-    "2009": {
+    "t2006": "1987",
+    "t2007": "1987",
+    "t2008": "1987",
+    "t2009": {
         "title": "Taking a break from studies",
         "subtitle": "Start making memories by enlisting",
         "message": [
@@ -70,9 +70,9 @@
             "https://miro.medium.com/max/1400/1*mk1-6aYaf_Bes1E3Imhc0A.jpeg"
         ]
     },
-    "2010": "1987",
-    "2011": "1987",
-    "2012": {
+    "t2010": "1987",
+    "t2011": "1987",
+    "t2012": {
         "title": "Leaving the Military",
         "subtitle": "It was fun while it lasted",
         "message": [
@@ -85,14 +85,14 @@
             "https://miro.medium.com/max/1400/1*mk1-6aYaf_Bes1E3Imhc0A.jpeg"
         ]
     },
-    "2013": "1987",
-    "2014": "1987",
-    "2015": "1987",
-    "2016": "1987",
-    "2017": "1987",
-    "2018": "1987",
-    "2019": "1987",
-    "2020": {
+    "t2013": "1987",
+    "t2014": "1987",
+    "t2015": "1987",
+    "t2016": "1987",
+    "t2017": "1987",
+    "t2018": "1987",
+    "t2019": "1987",
+    "t2020": {
         "title": "F.I.U.",
         "subtitle": "Back to basics",
         "message": [
@@ -105,8 +105,8 @@
             "https://miro.medium.com/max/1400/1*mk1-6aYaf_Bes1E3Imhc0A.jpeg"
         ]
     },
-    "2021": "1987",
-    "2022": "1987"
+    "t2021": "1987",
+    "t2022": "1987"
 
         
 }

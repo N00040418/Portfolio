@@ -1,31 +1,4 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Jonathan Schratter's Portfolio</title>
-  <link href="/css/fontawesome.min.css" rel="stylesheet">
-  <link href="/css/all.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Roboto+Slab:wght@400;700&family=Allura&display=swap" rel="stylesheet">
-  <link href="/css/style.css" rel="stylesheet">
-</head>
-<body>
-    <header id="home">
-        <div class="logo">
-            <h1>Jonathan Schratter</h1>
-        </div>
-        <button class="nav-toggle" aria-label="toggle navigation">
-            <span class="hamburger"></span>
-        </button>
-        <nav class="nav">
-            <ul class="nav__list">
-                <li class="nav__item"><a href="#home" class="nav__link"><pre><i class="fas fa-home color"></i> Home</pre></a></li>
-                <li class="nav__item"><a href="#services" class="nav__link"><pre><i class="fas fa-cogs color"></i> My Services</pre></a></li>
-                <li class="nav__item"><a href="#about" class="nav__link"><pre><i class="fas fa-address-card color"></i> About Me</pre></a></li>
-                <li class="nav__item"><a href="#work" class="nav__link"><pre><i class="fas fa-briefcase color"></i> My Work</pre></a></li>
-            </ul>
-        </nav>
-    </header>
+<%- include('partials/header') %>
 
     <!-- Introduction -->
     <section class="intro">
@@ -36,16 +9,59 @@
         <img src="/img/porg.jpg" alt="a picture of Jonathan Schratter smiling" class="intro__img">
     </section>
 
-    <p> <%= timeline.nineteen87.title %> </p>
+
+
+    <!-- My Timeline -->
+    <section class="my-timeline">
+        <div class="clock-container">
+            
+        </div>
+        <h1 class="section__title section__title--timeline">My TimeLine</h1>  
+        <!-- Carousel -->    
+        <div class="carousel">
+            <div class="carousel__nav">
+                <button class="carousel__indicator current-slide"><span>1987</span></button>
+                <button class="carousel__indicator"><span>1998</span></button>
+                <button class="carousel__indicator"><span>2001</span></button>
+                <button class="carousel__indicator"><span>2005</span></button>
+                <button class="carousel__indicator"><span>2009</span></button>
+                <button class="carousel__indicator"><span>2010</span></button>
+                <button class="carousel__indicator"><span>2013</span></button>
+                <button class="carousel__indicator"><span>2014</span></button>
+                <button class="carousel__indicator"><span>2015</span></button>
+                <button class="carousel__indicator"><span>2017</span></button>
+                <button class="carousel__indicator"><span>2019</span></button>
+                <button class="carousel__indicator"><span>2020</span></button>
+            </div>
+            <div class="carousel__button carousel__button--left is-hidden"><i class="fas fa-chevron-left fa-3x"></i></div>
+            <div class="carousel__track-container">
+                <ul class="carousel__track">
+                    <li class="carousel__slide current-slide">1</li>
+                    <li class="carousel__slide">2</li>
+                    <li class="carousel__slide">3</li>
+                    <li class="carousel__slide">4</li>
+                    <li class="carousel__slide">5</li>
+                    <li class="carousel__slide">6</li>
+                    <li class="carousel__slide">7</li>
+                    <li class="carousel__slide">8</li>
+                    <li class="carousel__slide">9</li>
+                    <li class="carousel__slide">10</li>
+                    <li class="carousel__slide">11</li>
+                    <li class="carousel__slide">12</li>
+                </ul>
+            </div>
+            <div class="carousel__button carousel__button--right"><i class="fas fa-chevron-right fa-3x"></i></div>
+        </div>
+    </section> 
 
     <!-- My Services -->
     <section class="my-services" id="services">
         <h1 class="section__title section__title--services">What I do</h1>
         <div class="services">
-            <div class="service">
+            <div class="service in-text__link">
                 <h3>Alarm Consultant</h3>
                 <p>Assist in the maintenance and repair of security systems for 
-                    <a href="http://www.moonalarms.com/" class="in-text__link">Moon Security Systems, INC.</a></p>
+                    <a href="http://www.moonalarms.com/" target="_blank" rel="noopener noreferrer">Moon Security Systems, INC.</a></p>
             </div>
             <div class="service">
                 <h3>Tutoring</h3>
@@ -83,17 +99,23 @@
         <p class="section__subtitle section__subtitle--work">Selection of my range of studies</p>
 
         <div class="portfolio">
-            <a href="portfolio" class="portfolio__item">
+            <a href="music" class="portfolio__item">
                 <img src="/img/cabin.png" alt="" class="portfolio__img">
             </a>
-            <a href="portfolio" class="portfolio__item">
+            <a href="cs" class="portfolio__item">
                 <img src="/img/cake.png" alt="" class="portfolio__img">
             </a>
-            <a href="portfolio" class="portfolio__item">
+            <a href="ee" class="portfolio__item">
                 <img src="/img/circus.png" alt="" class="portfolio__img">
             </a>
-            <a href="portfolio" class="portfolio__item">
+            <a href="auto" class="portfolio__item">
                 <img src="/img/game.png" alt="" class="portfolio__img">
+            </a>
+            <a href="phy" class="portfolio__item">
+                <img src="/img/cabin.png" alt="" class="portfolio__img">
+            </a>
+            <a href="mat" class="portfolio__item">
+                <img src="/img/cake.png" alt="" class="portfolio__img">
             </a>
             
         </div>
@@ -101,37 +123,5 @@
         <img src="/img/about-us.png" alt="a picture of Jonathan Schratter on a computer">
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <span>Jonathan Schratter</span>
-        <ul class="social-list">
-            <li class="social-list__item">
-                <a href="https://github.com/N00040418" class="social-list__link">
-                    <i class="fab fa-github-square"></i>
-                </a>
-            </li>
-            <li class="social-list__item">
-                <a href="https://www.linkedin.com/in/jonathan-schratter-061060209/" class="social-list__link">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-            </li>
-            <li class="social-list__item">
-                <a href="https://fiu.joinhandshake.com/users/27773836" class="social-list__link">
-                    <i class="fas fa-handshake"></i>
-                </a>
-            </li>
-        </ul>
-        <section class="footer-2">
-            <a href="mailto:jschr002@fiu.edu" class="footer__link">jschr002@fiu.edu</a>
-            <img src="/img/FIU.png" alt="" class="footer-2__img">
-            <p>College of Arts, Sciences & Education</p>
-            <p>Department of Mathematics and Statistics</p>
-            <p>Last Updated October 2, 2021</p>
-        </section>
-        <p><i class="fas fa-copyright"></i>Florida International University. All Rights Reserved.</p>
-    </footer>
-
-
-    <script src="/js/index.js"></script>
-</body>
-</html>
+<script src="/js/carousel.js"></script>
+    <%- include('partials/footer') %>
