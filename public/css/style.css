@@ -354,39 +354,125 @@ header {
 }
 
 
-/* My About Me Section */
+/* My portfolio Section */
 .my-work { 
   background-color: var(--clr-dark);
-  color: var(--clr-light);
   text-align: center;
 }
 .portfolio {
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
 }
-.portfolio__item {
-  background: var(--clr-accent);
+.card{
+  color: var(--clr-dark);
+  padding: 10rem 0 0;
+  max-width: 35ch;
+  border-radius: .5rem;
   overflow: hidden;
+  margin: 1em 1em;
+  transition: transform 500ms ease;
+  font-weight: var(--fw-bold);
+  background-color: var(--clr-light);
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card__content {
+  --padding: 1em;
+  padding: var(--padding);
+  background: linear-gradient(
+                hsl(0 0% 0% / 0), 
+                hsl(170 82% 48% / 0.7) 20%,
+                hsl(0 0% 0% / 1)
+              );
+  transition: transform 500ms ease;
+}
+.card__content >  *:not(.card__title) {
+  opacity: 0;
+  transition: opacity 500ms linear;
+}
+.card:hover .card__content >  *:not(.card__title)  , .card:hover .card__content{
+  opacity: 1;
+}
+
+.card__title {
+  font-size: 1.6rem;
   position: relative;
-  margin: 1em;
-  border: 7px solid var(--clr-accent);
-  border-radius: 11%;
+  width: max-content;
   
 }
-.portfolio__img {
-  transition: transform 750ms cubic-bezier(.5,0,.5,1),
-  opacity 250ms linear;
-  height: 100%;
-  object-fit: fill;
+.card__title::after {
+  content: '';
+  position: absolute;
+  height: 4px;
+  left: calc( var(--padding) * -1);
+  bottom: -8px;
+  width: calc(100% + var(--padding));
+  background: var(--clr-accent);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 750ms ease;
 }
-.portfolio__item:focus{
-  position: relative;
-  z-index: 2; 
-}
-.portfolio__img:hover, .portfolio__item:focus .portfolio__img {
-  transform: scale(1.2);
-  opacity: .75;
 
+.card:hover .card__title::after {
+  transform: scaleX(1);
+}
+.card__body {
+  color: rgb(255 255 255 / 0.8);
+}
+.card__btn {
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  color: var(--clr-dark);
+  background-color: var(--clr-accent);
+  padding: 0.5em 1.25em;
+  border-radius: .25rem;
+}
+
+.card__btn:hover, .card__btn:focus {
+  background-color: var(--clr-dark);
+  
+  color: var(--clr-accent);
+}
+.c1 {
+  background-image: url(/img/sound.gif);
+}
+.c2 {
+  background-image: url(/img/matrix.gif);
+}
+.c3 {
+  background-image: url(/img/electrical.gif);
+}
+.c4 {
+  background-image: url(/img/automation.gif);
+}
+.c5 {
+  background-image: url(/img/electromagnetism.gif);
+}
+.c6 {
+  background-image: url(/img/math.gif);
+}
+.c1, .c2, .c3, .c4, .c5, .c6 {
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.c4 .card__content, .c5 .card__content, .c6 .card__content {
+  transform: translateY(70%);
+}
+.c1 .card__content, .c3 .card__content{
+  transform: translateY(85%);
+}
+.c2 .card__content{
+  transform: translateY(61%);
+}
+.card:hover .card__content {
+  transform: translateY(0%);
+}
+.c1:hover .card__content, .c3:hover .card__content {
+  transform: translateY(16%);
 }
 
 
